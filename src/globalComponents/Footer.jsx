@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 const Footer = () => {
@@ -36,50 +36,50 @@ const Footer = () => {
                   title: "Company",
                   links: [
                     { link: "", name: "About us" },
-                    { link: "", name: "Features" },
-                    { link: "", name: "Solutions" },
-                    { link: "", name: "Tutorials" },
-                    { link: "", name: "Pricing" },
-                    { link: "", name: "Releases" },
+                    { link: "", name: "Careers" },
+                    { link: "", name: "Press" },
+                    { link: "", name: "News" },
+                    { link: "", name: "Media Kit" },
+                    { link: "", name: "Contact" },
                   ],
                 }}
               />
               <MenuLinks
                 data={{
-                  title: "Company",
+                  title: "Resoures",
                   links: [
-                    { link: "", name: "About us" },
-                    { link: "", name: "Features" },
-                    { link: "", name: "Solutions" },
+                    { link: "", name: "Blog" },
+                    { link: "", name: "News Letter" },
+                    { link: "", name: "Events" },
+                    { link: "", name: "Help Center" },
                     { link: "", name: "Tutorials" },
-                    { link: "", name: "Pricing" },
-                    { link: "", name: "Releases" },
+                    { link: "", name: "Support" },
                   ],
                 }}
               />
               <MenuLinks
                 data={{
-                  title: "Company",
+                  title: "Social",
                   links: [
-                    { link: "", name: "About us" },
-                    { link: "", name: "Features" },
-                    { link: "", name: "Solutions" },
-                    { link: "", name: "Tutorials" },
-                    { link: "", name: "Pricing" },
-                    { link: "", name: "Releases" },
+                    { link: "", name: "Twitter" },
+                    { link: "", name: "Linkedin" },
+                    { link: "", name: "Facebook" },
+                    { link: "", name: "Git hub" },
+                    { link: "", name: "Angel List" },
+                    { link: "", name: "Dribble" },
                   ],
                 }}
               />
               <MenuLinks
                 data={{
-                  title: "Company",
+                  title: "Legal",
                   links: [
-                    { link: "", name: "About us" },
-                    { link: "", name: "Features" },
-                    { link: "", name: "Solutions" },
-                    { link: "", name: "Tutorials" },
-                    { link: "", name: "Pricing" },
-                    { link: "", name: "Releases" },
+                    { link: "", name: "Terms" },
+                    { link: "", name: "Privacy" },
+                    { link: "", name: "Cookies" },
+                    { link: "", name: "License" },
+                    { link: "", name: "Setting" },
+                    { link: "", name: "Contact" },
                   ],
                 }}
               />
@@ -104,7 +104,7 @@ const Footer = () => {
                 <span className="sr-only">GitHub account</span>
               </Link>
               <Link to="" className="text-blue-500 hover:text-gray-900  ms-5">
-                <span className="sr-only">Dribbble account</span>
+                <FaGithub />
               </Link>
             </div>
           </div>
@@ -119,10 +119,10 @@ export default Footer;
 const MenuLinks = ({ data }) => {
   return (
     <div>
-      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
+      <h2 className="mb-6 text-xs font-semibold text-gray-700 uppercase ">
         {data?.title}
       </h2>
-      <ul className="text-gray-500  font-medium">
+      <ul className="text-gray-900  font-medium">
         {data?.links?.map((link, index) => (
           <li key={index} className="mb-4">
             <Link href={link.link} className="hover:underline ">
