@@ -1,3 +1,5 @@
+import { HiOutlineSearch } from "react-icons/hi";
+
 const HasanHome = () => {
   return (
     <div>
@@ -20,16 +22,43 @@ const HasanHome = () => {
           <h2 className="text-white text-center font-montserrat font-bold text-6xl md:text-7xl leading-9 md:leading-10 tracking-tighter md:tracking-normal">
             Your Portal to India's Exquisite Real Estate
           </h2>
-          <div className="text-center mt-12">
-            <button className="px-4 py-6 bg-[#0059B1] rounded ">
-              Find Property
+          <div className="text-center mt-12 flex justify-center">
+            <button
+              className="py-4 px-6 flex items-center justify-center gap-x-3 bg-[#0059B1] text-white rounded
+          "
+            >
+              <HiOutlineSearch />
+              <span>Find Properties</span>
             </button>
           </div>
         </div>
       </div>
 
       {/* Property part */}
-      <div></div>
+      <div>
+        <div className="grid grid-cols-2 gap-x-8 my-20">
+          <div></div>
+          <div>
+            <p className="text-[#F06711] mb-4">
+              <span className="line-through">Property</span> buying
+            </p>
+            <h2 className="text-4xl font-bold text-[#181818] mb-6">
+              Efficient and Transparent Home Buying Solutions
+            </h2>
+            <p className="mb-12 text-[#667085] font-medium leading-6">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. 
+            </p>
+            <button
+              className="py-4 px-6 flex items-center justify-center gap-x-3 bg-[#0059B1] text-white rounded
+          "
+            >
+              <HiOutlineSearch />
+              <span>Find Properties</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
